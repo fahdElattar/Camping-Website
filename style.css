@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --brown: #9B4F2D;
+    --light: #eee;
+    --padding4: 4rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    background: var(--brown);
+    padding-block: 1rem;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin-inline: auto;
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .7);
+}
+
+#hero {
+    background-image: url("./Img/mountain-2.jpg");
+    border-radius: 1rem 1rem 0 0;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: var(--padding4);
+    padding-block: 1.5rem;
+    background-color: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(1rem);
+}
+
+.logo a {
+    text-decoration: none;
+    color: var(--light);
+    text-transform: uppercase;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.links li {
+    list-style: none;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--light);
+    text-transform: uppercase;
+    transition: color .2s ease-in-out;
+}
+
+.links a:hover {
+    color: #fff;
+}
+
+.btn {
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    border: none;
+    cursor: pointer;
+    scale: 1;
+    transition: scale .2s ease-in-out;
+}
+
+.btn:is(:active){
+    scale: 0.96;
+}
+
+.btn-outline-light {
+    background: transparent;
+    border: 2px solid var(--light);
+    color: var(--light);
+}
+
+.main {
+    padding-inline: var(--padding4);
+    padding-block: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.info-tag {
+    font-size: .8rem;
+    color: var(--light);
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, .2);
+    backdrop-filter: blur(15px);
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--light);
+    line-height: 3.5rem;
+    margin-bottom: .7rem;
+}
+
+.title-accent {
+    display: block;
+    font-size: 3.5rem;
+    background: linear-gradient(to right, var(--light) 0%, var(--light) 70%, rgba(255, 255, 255, .3) 100%);
+    background-clip: text;
+    color: transparent;
+    padding-bottom: .4rem;
+}
+
+.btn-bg-light {
+    background-color: var(--light);
+    color: black;
+    font-weight: 500;
+    text-align: center;
+}
+
+.btn-bg-light i {
+    margin-inline-start: .3rem;
+}
+
+.more {
+    padding-inline: var(--padding4);
+    padding-bottom: 4rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+}
+
+.card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    color: var(--light);
+}
+
+.card .icon {
+    --size: 2.5rem;
+
+    background-color: rgba(255, 255, 255, .2);
+    padding: .5rem;
+    border-radius: 50%;
+    width: var(--size);
+    height: var(--size);
+    display: grid;
+    place-items: center;
+}
+
+.icon i {
+    font-size: .8rem;
+}
+
+.description {
+    margin: 0;
+    font-weight: 300;
+    font-size: .8rem;
+}
+
+#services {
+    padding: var(--padding4);
+    padding-bottom: 6rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.services-title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 0;
+}
+
+.services-title span {
+    display: block;
+}
+
+.secvices-details p {
+    color: #777;
+    font-size: .9rem;
+    margin-bottom: 1rem;
+}
+
+.btn-outline-dark {
+    color: #000;
+    border: 1px solid #000;
+    background-color: transparent;
+    font-weight: 500;
+}
+
+.btn-bg-dark {
+    color: var(--light);
+    background-color: #000;
+    font-weight: 500;
+}
+
+.btn-outline-dark {
+    margin-left: .3rem;
+}
+
+.service-img {
+    height: 20rem;
+}
+
+.service-img img {
+    max-width: 100%;
+    border-radius: 1rem;
+    height: 100%;
+}
+
+footer {
+    padding: var(--padding4);
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer span {
+    color: var(--light);
+    text-transform: capitalize;
+}
